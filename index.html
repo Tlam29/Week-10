@@ -14,29 +14,54 @@
             <div class="row">
                 <div class="col-sm">
                     <div class="form-group">
-                        <label for="teams">Teams</label>
-                        <input type="text" class="form-control" id="teams">
+                        <label for="teams">Team</label>
+                        <input type="text" class="form-control" id="new-team">
                     </div>
                 </div>
                 <div class="col-sm">
                     <div class="form-group">
                         <label for="division">Division</label>
-                        <select name="divison" id="division">
-                            <option value="afc-north">AFC North</option>
-                            <option value="afc-south">AFC South</option>
-                            <option value="afc-east">NFC East</option>
-                            <option value="afc-west">NFC West</option>
-                            <option value="nfc-north">NFC North</option>
-                            <option value="nfc-south">NFC South</option>
-                            <option value="nfc-east">NFC East</option>
-                            <option value="nfc-west">NFC West</option>
+                        <select name="divison" id="division" class="form-control">
+                            <option value="select" active></option>
+                            <option value="AFC-North">AFC North</option>
+                            <option value="AFC-South">AFC South</option>
+                            <option value="AFC-East">NFC East</option>
+                            <option value="AFC-West">NFC West</option>
+                            <option value="NFC-North">NFC North</option>
+                            <option value="NFC-South">NFC South</option>
+                            <option value="NFC-East">NFC East</option>
+                            <option value="NFC-West">NFC West</option>
                         </select>
                     </div>
                 </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="win">Win</label>
+                        <input type="text" class="form-control" id="wins">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                    <label for="loss">Loss</label>
+                    <input type="text" class="form-control" id="losses">
+                    </div>
+                </div>
             </div>
+            <br>
+            <div class="btn btn-primary form-control" id="add">Add Team</div>
         </div>
     </div>
+    <table id="list" class="table table-dark table-striped">
+        <tr>
+            <th>Team</th>
+            <th>Division</th>
+            <th>Win</th>
+            <th>Loss</th>
+            <th>Actions</th>
+        </tr>
+    </table>
     
+    <script src="app.js"></script>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
