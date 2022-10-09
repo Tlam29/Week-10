@@ -11,6 +11,10 @@ document.getElementById('add').addEventListener('click', () => {
     let actions = row.insertCell(4);
     actions.appendChild(createDeleteButton(id++));
     document.getElementById('new-team').value = '';
+    document.getElementById('wins').value = '';
+    document.getElementById('losses').value = '';
+    document.getElementById('division').value = '';
+
 });
 function createDeleteButton(id){
     let btn = document.createElement('button');
